@@ -91,8 +91,91 @@ nav a:hover {
     transition: 0.3s;
 }
 .profile-img {
-    width: 150px;
-    border-radius: 12%;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
     margin-bottom: 20px;
+    border: 4px solid white;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
 }
+section h2 
+{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #0077ff;
+}
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skills-container div {
+    background: #0077ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.skills-container div:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+section 
+{
+    padding: 60px 50px;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.about-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 18px;
+}
+.contact-container {
+    text-align: center;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #0077ff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
+
+
+
 
